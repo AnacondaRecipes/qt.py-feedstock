@@ -41,3 +41,8 @@ extra:
   recipe-maintainers:
     - fredrikaverpil
     - mottosso
+  anaconda-services:
+    ref:  https://anaconda.zendesk.com/agent/tickets/38213
+    reason: "needed for custom installer"
+    recipe-maintainers:
+      - bkreider
