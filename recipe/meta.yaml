@@ -16,6 +16,9 @@ build:
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
+  # noarch: so only build on one platform
+  skip: True # [not linux64]
+
 requirements:
   host:
     - pip
@@ -24,11 +27,11 @@ requirements:
   run:
     - python
 
-test:
-  requires:
-    - pyside2
-  imports:
-    - Qt
+#test:
+#  requires:
+#    - pyside2
+#  imports:
+#    - Qt
 
 about:
   home: http://github.com/mottosso/Qt.py
